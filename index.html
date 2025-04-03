@@ -1,0 +1,86 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="FireRed/FireRed.css">
+    <script src="FireRed/FireRed.js"></script>
+  
+  <style>
+    
+    .tela {
+            display: none;
+        }
+
+        .ativa {
+            display: block;
+        }
+    
+    button {
+      font-family: 'Press Start 2P', sans-serif;
+    }
+    </style>
+</head>
+  
+<body>
+  <img src="https://i.postimg.cc/J0C8Z8Cy/Design-sem-nome.png"
+       alt="Logo" class="logo" border='0'width='20'height='50' >
+  
+  <!--Tela 0-->
+   <div id="tela" class="tela ativa">
+  <div class="container0">
+    <div class="content0">
+      
+      <div>
+        <h1>Oque Acha de Começar sua</h1>
+        <h1>Jornada Pókemon?</h1>
+      <p>Aceita desafio:<p>
+        <p style='font-size:20px;'>&#9660;</p>
+   <button onclick="mostrarTela('tela1')" class="button0"><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Poké_Ball_icon.svg" class="button_img0">
+  </button>
+
+      </div>
+    </div>
+  </div> 
+</div>
+  
+ <!--Tela 1-->
+  <div id="tela1" class="tela">
+  <div class="container1">
+    <div class="content1">
+      
+      <h1>Seu Rival deseja lutar!</h1>
+      <p>Escolha seu Pókemon:<p>
+<button onclick="escolher(1)"class="button1"><img src="https://i.postimg.cc/rwsWjVzH/FEXNb19-XMAU4-xu.png"class="bulbasauro"> <p> Bulbasauro🍃</p></button>
+
+<button onclick="escolher(2)"class="button1"><img src="https://i.postimg.cc/YqpQ4f7M/Nice-Png-charmander-png-269926.png" class="charmander">
+ <p> Charmander🔥</p>
+</button>
+
+<button onclick="escolher(3)"class="button1"><img src="https://i.postimg.cc/3rZvH4v6/pngkey-com-squirtle-png-4399737.png"class="squirtle">
+ <p> Squirtle🌊 </p>
+ </button>
+      
+    </div>
+  </div> 
+</div>
+  
+    <!--Tela 2-->
+    <div id="tela2" class="tela">
+        <div class="container2">
+            <div class="content2">
+              
+                <h1>Você <span class="colorido20">X</span><span class="colorido2"> Rival</span></h1>
+                <p id="escolhaPc"></p>
+                <p id="resultado"></p>
+                <p><span class="colorido2">Rival</span>: Vamos Lutar até um de nós ser o Campeão!!</p>
+                <p style='font-size:10px;'>&#9660;</p>
+                <button onclick="mostrarTela('tela')" class="button2"><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Poké_Ball_icon.svg" class="button_img2"></button>
+              <div id="mensagensAtaque"></div>
+<div id="resultado"></div>
+            </div>
+        </div>
+    </div>
+  
+  <footer> Alura - Imersão DEV - 2025</footer>
+</body>

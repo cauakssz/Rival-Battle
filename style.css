@@ -1,0 +1,175 @@
+/* Global Styles */
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+
+body {
+    background-color: #4B0082;
+    margin: 0;
+    padding: 0;
+    color: white;
+    position: relative;
+    font-family: "Press Start 2P", cursive;
+    font-size: 15px;
+}
+
+/* Logo Styles */
+.logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  max-width: 150px;
+  width: auto;
+}
+/* Container with the background image */
+.container0 {
+  background: url(https://i.postimg.cc/DfLZtF58/03957163354dadc710790cd2733e769e8a7d12f4.jpg) no-repeat center center/cover;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#resultado {
+  font-size: 18px;
+    letter-spacing: 1.5px;
+      line-height: 1;
+}
+
+
+/* Container with the background image */
+.container1,
+.container2 {
+  background: url("https://i.postimg.cc/5NPbnTXJ/maxresdefault.jpg") no-repeat center center/cover;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Content div for text and button */
+.content0,
+.content1,
+.content2 {
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 2px;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.content0 h1,
+.content1 h1,
+.content2 h1 {
+  margin-bottom: 40px;
+}
+
+/* Button Styles */
+/*estiliza a cor de cada botão especifico*/
+
+.button0 {
+    background: transparent;
+    border: none;
+    padding: 5px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+.content2 button {
+    background: transparent;
+    border: none;
+    padding: 5px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+.container2 h1 {
+  color: #8B0000;
+}
+.colorido2 {
+  color: #000080;
+}
+.colorido20 {
+  color: #4B0082;
+}
+
+.button0:hover {
+    background-color: rgba(0, 0, 0, 0.322);
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.content1 button {
+  color: white;
+  align-itens: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+   padding:10px 10px;
+  width: 300px; /* Largura do botão */
+    height: 300px; /* Altura do botão */
+  font-size: 15px;
+
+}
+
+.button img1 {
+    max-width: 70%; /* A imagem ocupa no máximo % da largura do botão */
+    max-height: 70%; /* A imagem ocupa no máximo % da altura do botão */
+    display: block; /* Remove espaços extras */
+    margin: center; /* Centraliza a imagem */
+  border-radius: 8px;
+}
+
+
+.button_img0,
+.button_img2{
+    height: 100px;
+   }
+
+/*estiliza as cores de cada pokemon*/
+.bulbasauro {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease;   
+} 
+.bulbasauro:hover {
+ background-color: #228B22;
+  transform: scale(1.1);
+   border-radius: 8px;
+}
+
+.charmander {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease
+}
+.charmander:hover {
+  background-color: #B22222;
+  transform: scale(1.1);
+   border-radius: 8px;
+}
+.squirtle {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease
+} 
+.squirtle:hover {
+ background-color: #1E90FF;
+  transform: scale(1.1);
+   border-radius: 8px;
+}
+  }
+
+.button_img {
+    height: 40px;}
+
+/* Footer Styles */
+footer {
+  color: white;
+ align-itens: center;
+    font-weight: bold;
+  text-align: center;
+    padding: 10px;
+    background-color: rgba(128, 175, 114, 0.582);
+}
