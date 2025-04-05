@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
 
 body {
+  background: url(https://i.postimg.cc/DfLZtF58/03957163354dadc710790cd2733e769e8a7d12f4.jpg) no-repeat center center/cover; 
+  background-position: bottom;
     background-color: #4B0082;
     margin: 0;
     padding: 0;
@@ -21,7 +23,7 @@ body {
 }
 /* Container with the background image */
 .container0 {
-  background: url(https://i.postimg.cc/DfLZtF58/03957163354dadc710790cd2733e769e8a7d12f4.jpg) no-repeat center center/cover;
+  background-position: bottom;
   text-align: center;
   min-height: 100vh;
   display: flex;
@@ -34,7 +36,23 @@ body {
     letter-spacing: 1.5px;
       line-height: 1;
 }
+#resultado { 
+/* Outros estilos para container1 */
+animation: wipe-in-down 2s ease-out forwards; /* Ajuste a duração e easing conforme necessário */
+}
 
+@keyframes wipe-in-down {
+  from {
+    clip-path: inset(0 0 100% 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+[transition-style="in:wipe:down"] {
+  animation: 3s cubic-bezier(.25, 1, .30, 1) wipe-in-down both;
+}
 
 /* Container with the background image */
 .container1,
@@ -64,6 +82,24 @@ body {
   margin-bottom: 40px;
 }
 
+.container1 {
+  /* Outros estilos para container1 */
+  animation: square-in-center 2s ease-out forwards; /* Ajuste a duração e easing conforme necessário */
+}
+
+@keyframes square-in-center {
+  from {
+    clip-path: inset(100% 100% 100% 100%);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+[transition-style="in:square:center"] {
+  animation: 2s cubic-bezier(.25, 1, .30, 1) square-in-center both;
+}
+
 /* Button Styles */
 /*estiliza a cor de cada botão especifico*/
 
@@ -75,7 +111,7 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
-
+  
 .content2 button {
     background: transparent;
     border: none;
@@ -94,7 +130,8 @@ body {
   color: #4B0082;
 }
 
-.button0:hover {
+.button0:hover,
+.content2 button:hover {
     background-color: rgba(0, 0, 0, 0.322);
     transform: scale(1.1);
     transition: transform 0.3s ease;
@@ -159,7 +196,7 @@ body {
   transform: scale(1.1);
    border-radius: 8px;
 }
-  }
+  
 
 .button_img {
     height: 40px;}
@@ -167,9 +204,9 @@ body {
 /* Footer Styles */
 footer {
   color: white;
- align-itens: center;
+   align-itens: center;
     font-weight: bold;
   text-align: center;
     padding: 10px;
-    background-color: rgba(128, 175, 114, 0.582);
+    background-color: #4B0082;
 }

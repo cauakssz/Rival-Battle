@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>FireRed</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
 <html lang="pt-BR">
 
 <head>
@@ -21,6 +31,16 @@
     }
     </style>
 </head>
+<script>
+  function playAudio() {
+    let x = document.getElementById("myAudio");
+    x.play();
+  }
+  function pauseAudio() {
+    let x = document.getElementById("myAudio");
+    x.play();
+  }
+</script>
   
 <body>
   <img src="https://i.postimg.cc/J0C8Z8Cy/Design-sem-nome.png"
@@ -36,9 +56,21 @@
         <h1>Jornada Pókemon?</h1>
       <p>Aceita desafio:<p>
         <p style='font-size:20px;'>&#9660;</p>
-   <button onclick="mostrarTela('tela1')" class="button0"><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Poké_Ball_icon.svg" class="button_img0">
-  </button>
 
+        <audio id="click">
+          <source src="tmpq91k5v_6.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio><br></br>
+        
+  <audio id="myAudio">
+    <source src="batalha-pokemon.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+    </audio><br></br>
+
+    
+   <button onclick="mostrarTela('tela1')" id="btn" class="button0"><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Poké_Ball_icon.svg" class="button_img0">
+  </button>
+  
       </div>
     </div>
   </div> 
@@ -75,7 +107,8 @@
                 <p id="resultado"></p>
                 <p><span class="colorido2">Rival</span>: Vamos Lutar até um de nós ser o Campeão!!</p>
                 <p style='font-size:10px;'>&#9660;</p>
-                <button onclick="mostrarTela('tela')" class="button2"><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Poké_Ball_icon.svg" class="button_img2"></button>
+
+                <button onclick="mostrarTela('tela')" id="btn2" class="button2"><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Poké_Ball_icon.svg" class="button_img2"></button>
               <div id="mensagensAtaque"></div>
 <div id="resultado"></div>
             </div>
@@ -84,3 +117,8 @@
   
   <footer> Alura - Imersão DEV - 2025</footer>
 </body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
