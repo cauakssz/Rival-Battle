@@ -1,15 +1,14 @@
 const btn = document.querySelector("#btn");
-const audioId = "myAudio"; // ID do elemento de áudio
-const telaId = "tela1"; // ID da tela que você quer mostrar
-const telaId2 = "tela2"; // ID da tela que você quer que pare a musica
-const audio = document.getElementById(audioId); // Obtém o elemento de áudio
+const audioId = "myAudio"; 
+const telaId = "tela1"; 
+const telaId2 = "tela2";
+const audio = document.getElementById(audioId); 
 
 const btn2 = document.querySelector("#btn2");
     const audioId2 = "click";
-const telaId3 = "tela2" ; // ID da tela que você quer mostrar
-  const telaId4 = "tela0" // ID da tela que você quer que pare a musica
-  const audio2 = document.getElementById(audioId2); // Obtém o elemento de áudio
-
+const telaId3 = "tela2" ; 
+  const telaId4 = "tela0" 
+  const audio2 = document.getElementById(audioId2); 
 
 
 
@@ -17,7 +16,7 @@ function myAudio(id) {
   const audio = document.getElementById(id);
   if (audio) {
     audio.loop = true;
-    // Define o loop como verdadeiro
+   
     audio.play();
   } else {
     console.error("Audio element with id '" + id + "' not found.");
@@ -41,7 +40,7 @@ function mostrarTela(id) {
   document.getElementById(id).classList.add("ativa");
     if (id === telaId2) {
         audio.pause();
-        audio.currentTime = 0; // Reseta o áudio para o início
+        audio.currentTime = 0;
     }
 }
 
@@ -72,7 +71,6 @@ const fraquezas = {
         Squirtle: ["Bulbasauro"],
      };
   
-//escolhaJogador = prompt("Escolha seu Pókemon: 1-Bulbasauro, 2-Charmander ou 3-Squirtle");//
     const escolhaPc = Math.floor(Math.random() * 3) + 1;
     let rival = pokemons[escolhaPc];
     let escolhaJogador = pokemons[choice];
