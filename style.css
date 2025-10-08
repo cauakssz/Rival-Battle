@@ -1,4 +1,3 @@
-/* Global Styles */
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
 
 body {
@@ -13,7 +12,7 @@ body {
     font-size: 15px;
 }
 
-/* Logo Styles */
+
 .logo {
   position: absolute;
   top: 20px;
@@ -21,7 +20,7 @@ body {
   max-width: 150px;
   width: auto;
 }
-/* Container with the background image */
+
 .container0 {
   background-position: bottom;
   text-align: center;
@@ -37,8 +36,8 @@ body {
       line-height: 1;
 }
 #resultado { 
-/* Outros estilos para container1 */
-animation: wipe-in-down 2s ease-out forwards; /* Ajuste a duração e easing conforme necessário */
+
+animation: wipe-in-down 2s ease-out forwards; 
 }
 
 @keyframes wipe-in-down {
@@ -54,7 +53,7 @@ animation: wipe-in-down 2s ease-out forwards; /* Ajuste a duração e easing con
   animation: 3s cubic-bezier(.25, 1, .30, 1) wipe-in-down both;
 }
 
-/* Container with the background image */
+
 .container1,
 .container2 {
   background: url("https://i.postimg.cc/5NPbnTXJ/maxresdefault.jpg") no-repeat center center/cover;
@@ -65,7 +64,7 @@ animation: wipe-in-down 2s ease-out forwards; /* Ajuste a duração e easing con
   align-items: center;
 }
 
-/* Content div for text and button */
+
 .content0,
 .content1,
 .content2 {
@@ -83,8 +82,8 @@ animation: wipe-in-down 2s ease-out forwards; /* Ajuste a duração e easing con
 }
 
 .container1 {
-  /* Outros estilos para container1 */
-  animation: square-in-center 2s ease-out forwards; /* Ajuste a duração e easing conforme necessário */
+ 
+  animation: square-in-center 2s ease-out forwards;
 }
 
 @keyframes square-in-center {
@@ -99,9 +98,6 @@ animation: wipe-in-down 2s ease-out forwards; /* Ajuste a duração e easing con
 [transition-style="in:square:center"] {
   animation: 2s cubic-bezier(.25, 1, .30, 1) square-in-center both;
 }
-
-/* Button Styles */
-/*estiliza a cor de cada botão especifico*/
 
 .button0 {
     background: transparent;
@@ -144,17 +140,17 @@ animation: wipe-in-down 2s ease-out forwards; /* Ajuste a duração e easing con
   background-color: transparent;
   border: none;
    padding:10px 10px;
-  width: 300px; /* Largura do botão */
-    height: 300px; /* Altura do botão */
+  width: 300px; 
+    height: 300px; 
   font-size: 15px;
 
 }
 
 .button img1 {
-    max-width: 70%; /* A imagem ocupa no máximo % da largura do botão */
-    max-height: 70%; /* A imagem ocupa no máximo % da altura do botão */
-    display: block; /* Remove espaços extras */
-    margin: center; /* Centraliza a imagem */
+    max-width: 70%; 
+    max-height: 70%; 
+    display: block;
+    margin: center; 
   border-radius: 8px;
 }
 
@@ -164,7 +160,6 @@ animation: wipe-in-down 2s ease-out forwards; /* Ajuste a duração e easing con
     height: 100px;
    }
 
-/*estiliza as cores de cada pokemon*/
 .bulbasauro {
   background-color: transparent;
   transition: background-color 0.3s ease;
@@ -201,7 +196,6 @@ animation: wipe-in-down 2s ease-out forwards; /* Ajuste a duração e easing con
 .button_img {
     height: 40px;}
 
-/* Footer Styles */
 footer {
   color: white;
    align-itens: center;
